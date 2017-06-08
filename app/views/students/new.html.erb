@@ -1,0 +1,26 @@
+<h1>Student Form</h1>
+<%= form_for :student, url: students_path do |f| %>
+  <p>
+    <%= f.label :Name %><br>
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <%= f.label :DOB %><br>
+    <%= f.text_field :dob %>
+  </p>
+
+  <p>
+    <%= f.label :City %><br>
+    <%= f.text_field :city %>
+  </p>
+
+  <p>
+    <%= f.label :Reg_no %><br>
+    <%= f.text_field :regno %>
+  </p>
+
+  <p>
+    <%= f.submit :Submit %>
+  </p>
+<% end %>

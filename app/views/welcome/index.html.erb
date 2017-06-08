@@ -1,0 +1,16 @@
+<h1>Admin Login</h1>
+<%= form_for :admin, url:{:controller=>'welcome', :action=>'check'} do |f| %>
+  <p>
+    <%= f.label :Email %><br>
+    <%= f.text_field :email %>
+  </p>
+
+  <p>
+    <%= f.label :Password %><br>
+    <%= f.password_field :password %>
+  </p>
+
+  <p>
+    <%= f.submit :Login %>
+  </p>
+<% end %>
