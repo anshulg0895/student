@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   resources :students
   resources :welcome
   root 'welcome#index'
+  get 'students/index'
 end
