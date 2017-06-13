@@ -1,16 +1,24 @@
-<h1>Admin Login</h1>
-<%= form_for :admin, url:{:controller=>'welcome', :action=>'check'} do |f| %>
-  <p>
-    <%= f.label :Email %><br>
-    <%= f.text_field :email %>
-  </p>
+<!DOCTYPE html>
+<html>
+<head>
+  <% stylesheet_link_tag "Admin_style.css" %>
+</head>
+  <body>
+    <h1>Admin Login</h1>
+    <%= form_for :admin, url:{:controller=>'welcome', :action=>'check'} do |f| %>
+      <p id="email">
+        <%= f.label :Email %><br>
+        <%= f.text_field :email, :id => "em" %>
+      </p>
 
-  <p>
-    <%= f.label :Password %><br>
-    <%= f.password_field :password %>
-  </p>
+      <p id="pass">
+        <%= f.label :Password %><br>
+        <%= f.password_field :password, :id => "password" %>
+      </p>
 
-  <p>
-    <%= f.submit :Login %>
-  </p>
-<% end %>
+      <p id="login">
+        <%= f.submit :Login, :id => "log" %>
+      </p>
+    <% end %>
+  </body>
+</html>

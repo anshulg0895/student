@@ -1,20 +1,28 @@
-<h1> Details</h1>
-<p>
-  <strong>Name:</strong>
-  <%= @admin.name %>
-</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <% stylesheet_link_tag "details.css" %>
+  </head>
+  <body>
+    <h1> Details</h1>
+    <p id="name">
+      <strong>Name:</strong>
+      <%= @admin.name %>
+    </p>
 
-<p>
-  <strong>DOB:</strong>
-  <%= @admin.dob %>
-</p>
+    <p id="dob">
+      <strong>DOB:</strong>
+      <%= @admin.dob %>
+    </p>
 
-<p>
-  <strong>City:</strong>
-  <%= @admin.city %>
-</p>
+    <p id="city">
+      <strong>City:</strong>
+      <%= @admin.city %>
+    </p>
 
-<p>
-  <strong>Reg_no:</strong>
-  <%= @admin.reg_no %>
-</p>
+    <p id="regno">
+      <strong>Reg_no:</strong>
+      <%= @admin.reg_no %>
+    </p>
+  </body>
+</html>
